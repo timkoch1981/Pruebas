@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extractor mobile.de</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Extractor de datos mobile.de</h1>
+      <p>
+        Pega aquí el contenido completo del anuncio y pulsa <strong>Extraer datos</strong>.
+      </p>
+
+      <textarea
+        id="rawInput"
+        placeholder="Pega el texto completo del anuncio de mobile.de aquí..."
+      ></textarea>
+
+      <div class="actions">
+        <button id="extractBtn">Extraer datos</button>
+        <button id="clearBtn" class="secondary">Limpiar</button>
+      </div>
+
+      <section id="status" class="status" aria-live="polite"></section>
+
+      <section class="result">
+        <h2>Resultado</h2>
+        <dl id="resultList"></dl>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
